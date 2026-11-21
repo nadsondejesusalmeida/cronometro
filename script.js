@@ -19,7 +19,7 @@ const formatTime = (time) => {
 }
 
 const addMarkToList = (markIndex, markTime) => {
-	marksList.innerHTML += `<p>Marca ${markIndex}: ${formatTime(markTime)}</p>`;
+	marksList.innerHTML += `<p>Marca ${markIndex}: <span class="time">${formatTime(markTime)}</span></p>`;
 }
 
 const markTime = () => {
